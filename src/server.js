@@ -1,5 +1,6 @@
 const express = require('express') // Importando o Express
 const mongoose = require('mongoose')// Importando o Mongoose
+const cors = require('cors')
 
 const routes = require('./routes')
 
@@ -13,6 +14,7 @@ mongoose.connect('mongodb+srv://mayronsouza:joaovivi13@omnistackms-oylq5.mongodb
 )
 
 app.use(express.json())
+app.use(cors())
 app.use(routes)
 
 app.listen(3333, () => console.log('Servidor executando...'))
