@@ -1,9 +1,9 @@
-const express = require('express')
-const mongoose = require('mongoose')
+const express = require('express') // Importando o Express
+const mongoose = require('mongoose')// Importando o Mongoose
 
 const routes = require('./routes')
 
-const app = express()
+const app = express()// Criando a Aplicação
 
 mongoose.connect('mongodb+srv://mayronsouza:joaovivi13@omnistackms-oylq5.mongodb.net/semana09?retryWrites=true&w=majority',
 {
